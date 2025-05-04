@@ -12,6 +12,6 @@ class Item extends Model
     return $this->hasMany(Item::class);
 }
     use HasFactory;
-    protected $fillable = ['name', 'category_id', 'price', 'stock'];
+    protected $fillable = ['name', 'price', 'stock'];
     public $timestamps = false;
 }

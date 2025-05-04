@@ -18,7 +18,10 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Update Category</button>
+            <div class="d-flex">
+                <button type="submit" class="btn btn-primary w-50 mr-2">Update Category</button>
+                <a href="{{ route('category.index') }}" class="btn btn-danger w-50">Cancel</a>
+            </div>
         </form>
     </div>
 </div>

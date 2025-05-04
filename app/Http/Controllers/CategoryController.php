@@ -81,7 +81,7 @@ class CategoryController extends Controller
             'name.regex' => 'Nama kategori hanya boleh berisi huruf dan spasi.',
         ]);
     
-        Category::create([
+        $category->update([
             'name' => $request->name,
         ]);
     
